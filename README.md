@@ -63,5 +63,6 @@ This command will send 5000 requests with a concurrency of 10 to the /car/120 en
 ![image](https://github.com/abdelfattehsakkat/redisVsMongodb/assets/61501905/d42cfc9e-5c64-4eb7-a36a-623a83329f10)
 
 - Performance using the Redis cache: **0.8 seconds**
-  ![image](https://github.com/abdelfattehsakkat/redisVsMongodb/assets/61501905/7eede4e1-ccde-463d-9b7a-97cc2bff1ff9)
+![image](https://github.com/abdelfattehsakkat/redisVsMongodb/assets/61501905/67b1718a-7421-4b43-9937-5f6d76c10708)
+
 
