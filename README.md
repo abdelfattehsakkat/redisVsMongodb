@@ -11,6 +11,24 @@ To set up and run this project, follow the steps below:
 - Node.js: Make sure you have Node.js installed on your system.
 - Redis: Install and run a Redis server.
 - MongoDB: Install and run a MongoDB server.
+- Insert 10,000 test documents into MongoDB, run the following code snippet in a MongoDB shell:
+
+```js
+for (let i = 1; i <= 10000; i++) {
+  const document = {
+    "id": i,
+    "name": "name_" + i,
+    "date": new Date(),
+    "price": Math.floor(Math.random() * 101) // Generates a random number between 0 and 100
+  };
+
+  db.cars.insertOne(document);
+}
+
+print("10000 documents inserted");
+
+```
+  
 
 ### Installation
 
@@ -46,8 +64,8 @@ node server.js
 
 The API endpoints are as follows:
 
-/car/:id: Retrieve car information **directly** from the database (MongoDB).
-/car/cache/:id: Retrieve car information with **Redis caching**.
+- /car/ :id: Retrieve car information **directly** from the database (MongoDB).
+- /car/cache/ :id : Retrieve car information with **Redis caching**.
 
 ### Benchmarking Performance
 
