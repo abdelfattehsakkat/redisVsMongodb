@@ -1,0 +1,19 @@
+{
+  "name": "caching-redis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "redis": "^4.6.10"
+  }
+}
